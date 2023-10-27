@@ -13,7 +13,6 @@ Widget MyDefaultTextStyle({
       style: TextStyle(
         color: color,
         fontSize: height,
-        fontFamily: 'Cairo',
         fontWeight: bold ? FontWeight.bold : FontWeight.normal,
       ));
 }

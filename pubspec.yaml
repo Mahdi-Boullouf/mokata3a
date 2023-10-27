@@ -3,24 +3,25 @@ description: A new Flutter project.
 
 publish_to: 'none'
 
-
 version: 1.0.0+1
 
 environment:
   sdk: '>=3.0.0-215.0.dev <4.0.0'
 
-
 dependencies:
+  bloc: ^8.1.2
+  carbon_icons: ^0.0.1+2
+  cloud_firestore: ^4.12.1
+  cupertino_icons: ^1.0.2
+  firebase_core: null
+  firebase_database: null
   flutter:
     sdk: flutter
-
-  firebase_database: 
-  firebase_core: 
-  fluttertoast: 
-  page_transition: 
-
-
-  cupertino_icons: ^1.0.2
+  flutter_barcode_scanner: ^2.0.0
+  flutter_bloc: ^8.1.3
+  fluttertoast: null
+  page_transition: null
+  qr_code_scanner: ^1.0.1
 
 dev_dependencies:
   flutter_launcher_icons: "^0.13.1"
@@ -28,25 +29,20 @@ dev_dependencies:
 flutter_launcher_icons:
   android: "launcher_icon"
   ios: true
-  image_path: "assets/images/pflag.png" 
+  image_path: "assets/images/pflag.png"
   flutter_test:
     sdk: flutter
 
-  
   flutter_lints: ^2.0.0
-
 
 flutter:
 
-
   uses-material-design: true
   assets:
-    - assets/images/pflag.png
+    - assets/images/
   fonts:
     - family: Cairo
       fonts:
-        - asset: assets/fonts/Cairo-Regular.ttf 
+        - asset: assets/fonts/Cairo-Regular.ttf
         - asset: assets/fonts/Cairo-Medium.ttf
-        - asset: assets/fonts/Cairo-Bold.ttf 
-
-  
+        - asset: assets/fonts/Cairo-Bold.ttf

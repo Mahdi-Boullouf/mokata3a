@@ -10,6 +10,7 @@ Widget Defaultbutton({
   double border = 10.0,
   double fontsize = 18,
   required double height,
+  Icon? icon,
   required double width,
   bool isloading = false,
 }) {
@@ -22,13 +23,18 @@ Widget Defaultbutton({
           ? CircularProgressIndicator(
               color: white,
             )
-          : Text(
-              text,
-              style: TextStyle(
-                color: textcolor,
-                fontSize: fontsize,
-                fontFamily: 'Cairo',
-              ),
+          : Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                icon == null ? SizedBox() : icon,
+                Text(
+                  text,
+                  style: TextStyle(
+                    color: textcolor,
+                    fontSize: fontsize,
+                  ),
+                ),
+              ],
             ),
       style: ElevatedButton.styleFrom(
         primary: color,

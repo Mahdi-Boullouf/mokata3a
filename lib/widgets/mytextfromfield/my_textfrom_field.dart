@@ -34,7 +34,7 @@ Widget MyTextForm(
                 borderRadius: BorderRadius.circular(1),
                 borderSide: const BorderSide(color: white, width: 2)),
             hintText: hinttext,
-            hintStyle: TextStyle(color: hintcolor, fontFamily: 'Cairo'),
+            hintStyle: TextStyle(color: hintcolor),
             enabledBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(1),
                 borderSide: BorderSide(color: Colors.white))),
